@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+*::selection {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+p {
+  letter-spacing: 0.7px;
+  line-height: 26px;
+  margin: 20px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0px 2px 20px #000;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.card .card-image {
+  height: 12rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-btn {
+  font-weight: bold;
+  background: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid #940a0a;
+  color: #940a0a;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.card .card-btn:hover {
+  background: #940a0a;
+  color: aliceblue;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-list .card1 {
+  position: relative;
+  height: 275px;
+  background-color: #222;
+  border-radius: 5px;
+}
+.card-list .card1 .card-image1 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+  border-radius: 5px;
+  transition: -webkit-clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out;
+  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
+}
+.card-list .card1:hover .card-image1 {
+  -webkit-clip-path: circle(80px at 50% 90px);
+          clip-path: circle(80px at 50% 90px);
+}
+.card-list .card1 .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 16px;
+  color: #fff;
+}
+.card-list .card1 .card-location {
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card-2 {
+  height: 400px;
+  box-shadow: 0 2px 20px #222;
+  text-align: center;
+  background: rgba(123, 148, 10, 0.231372549);
+}
+.card-2 .card-top {
+  background: #52810b;
+  height: 25%;
+}
+.card-2 img {
+  position: relative;
+  top: 20px;
+  margin-top: 10px;
+  width: 190px;
+  height: 180px;
+  border: solid 5px #fff8f8;
+  border-radius: 100%;
+}
+.card-2 button {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  background: #52810b;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+.card-2 button:hover {
+  color: #52810b;
+  background: transparent;
+}
+
+.card-3 {
+  border-radius: 5px;
+  height: 400px;
+  width: 250px;
+  box-shadow: 0 2px 20px #222;
+  background: url(./Yujiro-Hanma-Images.jpg) right/cover no-repeat;
+  transition: 0.4s ease-in-out;
+  background-size: 300px;
+}
+.card-3:hover {
+  background: url(./Yujiro-Hanma-Images.jpg) center/cover no-repeat;
+  background-size: 800px;
+}
+
+.card-4 {
+  cursor: pointer;
+  text-align: center;
+  height: 400px;
+  width: 280px;
+  box-shadow: 0 2px 20px rgba(19, 17, 17, 0.8274509804);
+  background: linear-gradient(-20deg, #fff 60%, #77a77b 10%);
+}
+.card-4 img {
+  margin-top: 25px;
+  width: 150px;
+  height: 180px;
+  border-radius: 50%;
+}
+.card-4 .infos {
+  transform: translateY(-70px);
+}/*# sourceMappingURL=style.css.map */
